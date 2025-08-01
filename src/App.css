@@ -1,0 +1,8 @@
+.logo {
+  background-image: url(/abeaflow-logo.png);
+  height: 120px;
+  width: 340px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: calc(var(--spacing) * -8);
+}

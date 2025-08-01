@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@layer theme {
+  :root {
+    --primary-color: #22516e;
+    --primary-dark: #0f3b55;
+    --secondary-color: #f8fafc;
+    --accent-color: #2b999f;
+    --accent-green: #2b9f57;
+    --bg-dark: #0e1c25;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --border-color: #e5e7eb;
+  }
+}
+
+@layer base {
+  .feature-icon {
+    font-size: var(--text-4xl) !important;
+  }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-primary);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[var(--primary-color)] hover:bg-[var(--primary-dark)] text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105;
+  }
+
+  .btn-secondary {
+    @apply bg-white border-2 border-[var(--primary-color)] text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200;
+  }
+
+  .feature-card {
+    @apply bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-[var(--border-color)];
+  }
+
+  .section-padding {
+    @apply py-20 px-4;
+  }
+}
+
+@layer utilities {
+  .gradient-bg {
+    background: linear-gradient(
+      135deg,
+      var(--primary-color) 0%,
+      var(--primary-dark) 100%
+    );
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AbeaFlow - Business Automation Made Simple</title>
+    <meta name="description"
+        content="Transform your business with custom automation solutions. Save time, reduce errors, and scale efficiently with our expert automation services.">
+    <meta name="keywords"
+        content="business automation, workflow automation, process automation, business efficiency, digital transformation">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="AbeaFlow - Business Automation Made Simple">
+    <meta property="og:description"
+        content="Transform your business with custom automation solutions. Save time, reduce errors, and scale efficiently.">
+
+    <!-- Twitter -->
+    <meta name="twitter:title" content="AbeaFlow - Business Automation Made Simple">
+    <meta name="twitter:description"
+        content="Transform your business with custom automation solutions. Save time, reduce errors, and scale efficiently.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+        @layer theme {
+        :root {
+            --primary-color: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary-color: #f8fafc;
+            --accent-color: #10b981;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] hover:bg-[var(--primary-dark)] text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105;
+        }
+        
+        .btn-secondary {
+            @apply bg-white border-2 border-[var(--primary-color)] text-[var(--primary-color)] hover:bg-[var(--primary-color)] hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200;
+        }
+        
+        .feature-card {
+            @apply bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-[var(--border-color)];
+        }
+        
+        .section-padding {
+            @apply py-20 px-4;
+        }
+    }
+
+    @layer utilities {
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        }
+    }
+    </style>
+
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Features.js"></script>
+    <script type="text/babel" src="components/Benefits.js"></script>
+    <script type="text/babel" src="components/Testimonials.js"></script>
+    <script type="text/babel" src="components/CTA.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+
+</html>
