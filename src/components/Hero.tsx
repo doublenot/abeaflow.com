@@ -116,7 +116,7 @@ const Hero: React.FC = () => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm"
           onClick={handleCloseModal}
         >
-          <div className="relative w-full max-w-2xl mx-4 bg-transparent rounded-lg shadow-lg flex flex-col items-center">
+          <div className="relative w-full max-w-4xl mx-4 bg-transparent rounded-lg shadow-lg flex flex-col items-center">
             <button
               className="absolute top-2 right-2 text-white text-2xl bg-black/40 rounded-full w-10 h-10 flex items-center justify-center hover:bg-black/70 transition-colors"
               onClick={() => setShowModal(false)}
@@ -126,7 +126,7 @@ const Hero: React.FC = () => {
             </button>
             <div className="w-full aspect-video rounded-lg overflow-hidden bg-black">
               <iframe
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+                src="https://www.youtube.com/embed/bgF06Cq41PM?autoplay=1"
                 title="How It Works"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
