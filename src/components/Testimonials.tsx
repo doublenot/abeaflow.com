@@ -119,7 +119,7 @@ const Testimonials: React.FC = () => {
           <p className="text-[var(--text-secondary)] mb-8">
             Trusted by 500+ businesses worldwide
           </p>
-          <div className="flex justify-center items-center space-x-12 opacity-60">
+          <div className="flex justify-start items-center space-x-12 opacity-60 overflow-auto sm:justify-center">
             {trustIndicators.map((indicator, idx) => (
               <div
                 key={idx}

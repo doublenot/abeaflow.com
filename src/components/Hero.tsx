@@ -122,12 +122,12 @@ const Hero: React.FC = () => {
               onClick={() => setShowModal(false)}
               aria-label="Close video"
             >
-              &times;
+              <div className="icon-x text-xl text-white"></div>
             </button>
             <div className="w-full aspect-video rounded-lg overflow-hidden bg-black">
               <iframe
-                src="https://www.youtube.com/embed/bgF06Cq41PM?autoplay=1"
-                title="How It Works"
+                src="https://www.youtube.com/embed/bd6xdiRsmEk?autoplay=1"
+                title="AbeaFlow - Automate Your Business"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 className="w-full h-full border-0"

@@ -32,6 +32,11 @@
     color: var(--text-primary);
     font-weight: 600;
   }
+
+  button,
+  a {
+    cursor: pointer;
+  }
 }
 
 @layer components {
